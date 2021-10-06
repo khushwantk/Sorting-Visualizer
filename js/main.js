@@ -73,3 +73,25 @@ newArrayBtn.addEventListener("click", () => {
   enableSizeSlider();
   enableSortingBtn();
 });
+
+// Adjust the Speed of sorting
+// delay=(max+minSlider Value)-input
+let delay = 100;
+delaySlider.addEventListener("input", () => {
+  delay = 320 - parseInt(delaySlider.value);
+});
+
+function swap(a, b) {
+  console.log("Swap");
+  let temp = a.style.height;
+  a.style.height = b.style.height;
+  b.style.height = temp;
+}
+
+function waitVisual(t) {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("");
+    }, t);
+  });
+}
