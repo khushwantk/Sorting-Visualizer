@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sorting Visualizer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="p-1 mb-2 bg-dark text-white">
+    <header>
+      <span
+        class="badge badge-warning bg-warning"
+        style="position: absolute; right: 10px"
+        >Not Yet Responsive</span
+      >
+      <!-- Title -->
+      <div class="mt-1 mb-3 d-flex justify-content-center">
+        <p align="center" class="p-3 fs-1 border title">Sorting Visualizer</p>
+      </div>
+
+      <!-- NavBar -->
+      <div class="d-flex justify-content-between">
+        <!-- New Array Btn -->
+        <button type="button" class="btn btn-outline-warning btn-dark newArray">
+          New Array
+        </button>
+
+        <!-- Sliders -->
+        <div id="input">
+          <span id="size" class="me-3"
+            >Size
+            <input
+              id="array-size"
+              type="range"
+              min="5"
+              max="150"
+              step="1"
+              value="60"
+            />
+          </span>
+          <span id="speed"
+            >Speed
+            <input
+              id="speed-input"
+              type="range"
+              min="20"
+              max="300"
+              stepDown="10"
+              value="100"
+            />
+          </span>
+        </div>
+
+        <!-- Sorting Buttons -->
+        <div class="d-flex gap-2">
+          <button
+            type="button"
+            class="btn btn-outline-light btn-dark bubbleSort"
+          >
+            Bubble Sort
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-light btn-dark selectionSort"
+          >
+            Selection Sort
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-light btn-dark insertionSort"
+          >
+            Insertion Sort
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-light btn-dark quickSort"
+          >
+            Quick Sort
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-light btn-dark mergeSort"
+          >
+            Merge Sort
+          </button>
+        </div>
+      </div>
+      <!-- Navbar End -->
+    </header>
+
+    <!-- Bars -->
+    <div class="mt-2 d-flex">
+      <div id="bars" class="d-flex mx-auto border p-4 pt-0 bars-container">
+        <div class="bar" style="height: 10px"></div>
+        <div class="bar" style="height: 360px"></div>
+        <div class="bar" style="height: 350px"></div>
+        <div class="bar" style="height: 70px"></div>
+        <div class="bar" style="height: 340px"></div>
+        <div class="bar" style="height: 70px"></div>
+        <div class="bar" style="height: 460px"></div>
+        <div class="bar" style="height: 450px"></div>
+        <div class="bar" style="height: 170px"></div>
+        <div class="bar" style="height: 240px"></div>
+        <div class="bar" style="height: 30px"></div>
+        <div class="bar" style="height: 30px"></div>
+        <div class="bar" style="height: 100px"></div>
+        <div class="bar" style="height: 50px"></div>
+        <div class="bar" style="height: 340px"></div>
+        <div class="bar" style="height: 10px"></div>
+        <div class="bar" style="height: 460px"></div>
+        <div class="bar" style="height: 350px"></div>
+        <div class="bar" style="height: 70px"></div>
+        <div class="bar" style="height: 340px"></div>
+        <div class="bar" style="height: 10px"></div>
+        <div class="bar" style="height: 360px"></div>
+        <div class="bar" style="height: 350px"></div>
+        <div class="bar" style="height: 70px"></div>
+        <div class="bar" style="height: 340px"></div>
+        <div class="bar" style="height: 10px"></div>
+        <div class="bar" style="height: 360px"></div>
+        <div class="bar" style="height: 350px"></div>
+        <div class="bar" style="height: 70px"></div>
+        <div class="bar" style="height: 340px"></div>
+        <div class="bar" style="height: 70px"></div>
+        <div class="bar" style="height: 360px"></div>
+        <div class="bar" style="height: 450px"></div>
+        <div class="bar" style="height: 370px"></div>
+        <div class="bar" style="height: 340px"></div>
+        <div class="bar" style="height: 100px"></div>
+        <div class="bar" style="height: 360px"></div>
+        <div class="bar" style="height: 450px"></div>
+        <div class="bar" style="height: 470px"></div>
+        <div class="bar" style="height: 340px"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
