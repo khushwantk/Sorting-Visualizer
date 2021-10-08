@@ -81,7 +81,7 @@ newArrayBtn.addEventListener("click", () => {
 
 // Adjust the Speed of sorting
 // delay=(max+minSlider Value)-input
-let delay = 100;
+let delay = 250;
 delaySlider.addEventListener("input", () => {
   delay = 320 - parseInt(delaySlider.value);
 });
