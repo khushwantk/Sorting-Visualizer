@@ -7,6 +7,11 @@ const quickSort = document.querySelector(".quickSort");
 const sizeSlider = document.querySelector("#array-size");
 const delaySlider = document.querySelector("#speed-input");
 const bars = document.querySelector("#bars");
+const topDown = document.querySelector(".topDown");
+
+topDown.addEventListener("click", () => {
+  bars.classList.toggle("bars-container-topDown");
+});
 
 // Disable Buttons while sorting
 function disablenewArray() {
